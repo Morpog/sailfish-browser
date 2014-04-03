@@ -328,9 +328,8 @@ WebContainer {
                 }
             }
 
-            // We decided to disable "text selection" until we understand how it
-            // should look like in Sailfish.
-            // TextSelectionController {}
+            TextSelectionController { color: _decoratorColor }
+
             states: State {
                 name: "boundHeightControl"
                 when: container.inputPanelVisible || !container.foreground || !visible
